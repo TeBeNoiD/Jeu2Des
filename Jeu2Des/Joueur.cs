@@ -52,7 +52,18 @@ namespace Jeu2Des
         #region Method
         public void Jouer()
         {
-            //TODO implémenter la méthode Jouer de la classe Joueur
+            De D1 = new De();
+            D1.Lancer();
+
+            De D2 = new De();
+            D2.Lancer();
+
+            //Si somme des valeurs des 2 dés est égale à 7
+            //Alors on ajoute 10 au score du joueur
+            if ((D1.Valeur + D2.Valeur) == 7)
+            {
+                this.Score += 10;
+            }
         }
         #endregion
     }

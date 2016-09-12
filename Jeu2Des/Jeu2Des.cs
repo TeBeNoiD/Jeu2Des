@@ -61,15 +61,26 @@ namespace Jeu2Des
         /// </summary>
         public void JouerPartie()
         {
-            //TODO Implémenter la méthode pour joueur la partie
+            int NbTour = 10;
+            for (int i = 0; i < NbTour; i++)
+            {
+                this.Joueur.Jouer();
+
+                //Au dernier tour on ajoute le score du joueur au classement
+                if (i == NbTour - 1)
+                {
+                    this.Classement.AjouterEntree(new Entree(this.Joueur.Nom, this.Joueur.Score));
+                }
+            }
         }
 
         /// <summary>
-        /// Affichage du classement
+        /// Récupérer le classement
         /// </summary>
-        public void VoirClassement()
+        /// <returns>Collection définissant chaque entrée du classement</returns>
+        public List<Entree> VoirClassement()
         {
-            //TODO Implémenter la méthode pour voir le classement
+            return this.Classement.Entrees;
         }
         #endregion
     }

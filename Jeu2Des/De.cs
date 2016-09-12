@@ -46,7 +46,7 @@ namespace Jeu2Des
         {
             Random monRandom = new Random();
 
-            this.Valeur = monRandom.Next(1, 6);
+            this.Valeur = monRandom.Next(1, 7);
         }
         #endregion
     }

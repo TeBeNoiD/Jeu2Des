@@ -50,9 +50,10 @@ namespace Jeu2Des
         /// <summary>
         /// Afficher le classement des N meilleurs entrées
         /// </summary>
-        public void TopN()
+        public List<Entree> TopN()
         {
-            //TODO Implémenter la méthode TopN de la classe Classement
+            this.Entrees.Sort();
+            return this.Entrees;
         }
         #endregion
     }

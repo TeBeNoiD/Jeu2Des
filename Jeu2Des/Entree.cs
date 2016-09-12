@@ -12,7 +12,7 @@ namespace Jeu2Des
     /// <summary>
     /// Définit un objet représentant une ligne du classement
     /// </summary>
-    public class Entree
+    public class Entree : IComparable
     {
         #region Attributes and properties
         /// <summary>
@@ -46,6 +46,42 @@ namespace Jeu2Des
         /// Constructeur par défaut
         /// </summary>
         public Entree() : this("ABC", 0) { }
+
+        
+         public override bool Equals(object obj)
+        {
+            if (obj != null && this.GetType() == obj.GetType())
+            {
+                Entree E = (Entree)obj;
+                if (this.Score == E.Score && this.Nom == E.Nom)
+                    return true;
+            }
+            return false;
+        }
+
+        public override string ToString()
+        {
+            return this.Nom + "-" + this.Score.ToString();
+        }
+
+        public override int GetHashCode()
+        {
+            return this.ToString().GetHashCode();
+        }
+
+        public int CompareTo(object obj)
+        {
+            if (obj != null && obj is Entree)
+            {
+                if (this.Equals(obj))
+                    return 0;
+
+                Entree E = (Entree)obj;
+                if (this.Score > E.Score)
+                    return 1;
+            }
+            return -1;
+        }
         #endregion
 
         #region Method
