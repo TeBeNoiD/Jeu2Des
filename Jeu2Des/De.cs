@@ -9,7 +9,7 @@ namespace Jeu2Des
 	/// <summary>
     /// 
     /// </summary>
-    public class Class1
+    public class De
     {
 		#region Attributes and properties
 		
