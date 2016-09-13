@@ -26,7 +26,10 @@ namespace Jeu2Des
             protected set { _Valeur = value; }
         }
 
-        private static Random _Random; 
+        /// <summary>
+        /// Génerateur de nombre aléatoire
+        /// </summary>
+        private static Random _Random = new Random();
         #endregion
 
         #region Constructors
@@ -36,7 +39,6 @@ namespace Jeu2Des
         public De()
         {
             this.Valeur = 0;
-            _Random = new Random();
         }
         #endregion
 

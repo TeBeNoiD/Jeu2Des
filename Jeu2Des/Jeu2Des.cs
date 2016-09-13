@@ -52,7 +52,6 @@ namespace Jeu2Des
         /// Constructeur par défaut
         /// </summary>
         public Jeu2Des() : this(new Joueur(), new Classement()) { }
-
         #endregion
 
         #region Method
@@ -64,12 +63,14 @@ namespace Jeu2Des
             int NbTour = 10;
             for (int i = 0; i < NbTour; i++)
             {
+                Console.WriteLine("Tour {0}, {1} a lancé les deux dés:", i+1, this.Joueur.Nom);
                 this.Joueur.Jouer();
 
                 //Au dernier tour on ajoute le score du joueur au classement
                 if (i == NbTour - 1)
                 {
                     this.Classement.AjouterEntree(new Entree(this.Joueur.Nom, this.Joueur.Score));
+                    Console.WriteLine("Le score du joueur {0} est de {1}, BRAVO !!!", this.Joueur.Nom, this.Joueur.Score);
                 }
             }
         }

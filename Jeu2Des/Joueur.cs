@@ -64,6 +64,10 @@ namespace Jeu2Des
             {
                 this.Score += 10;
             }
+
+            Console.WriteLine("Dés 1=> {0}", D1.Valeur);
+            Console.WriteLine("Dés 2=> {0}", D2.Valeur);
+
         }
         #endregion
     }
