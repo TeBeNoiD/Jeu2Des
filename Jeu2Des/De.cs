@@ -49,7 +49,6 @@ namespace Jeu2Des
         {
             this.Valeur = _Random.Next(1, 7);
         }
-        
         #endregion
     }
 }

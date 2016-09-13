@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeu2Des", "Jeu2Des\Jeu2Des.csproj", "{8F9F751F-077A-4C59-A637-ADA7E204293B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteurJeu2Des", "TesteurJeu2Des\TesteurJeu2Des.csproj", "{DE1C40EA-9D6D-432C-94C9-5056BF0912E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8F9F751F-077A-4C59-A637-ADA7E204293B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F9F751F-077A-4C59-A637-ADA7E204293B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F9F751F-077A-4C59-A637-ADA7E204293B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE1C40EA-9D6D-432C-94C9-5056BF0912E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1C40EA-9D6D-432C-94C9-5056BF0912E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1C40EA-9D6D-432C-94C9-5056BF0912E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1C40EA-9D6D-432C-94C9-5056BF0912E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

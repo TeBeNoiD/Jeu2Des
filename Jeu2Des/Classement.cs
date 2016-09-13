@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 /// </summary>
 namespace Jeu2Des
 {
-    //C'est une classe bof bof couille d'ablette
     /// <summary>
     /// Objet regroupant les scores des parties précédentes
     /// </summary>
