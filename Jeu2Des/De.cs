@@ -25,6 +25,8 @@ namespace Jeu2Des
             get { return _Valeur; }
             protected set { _Valeur = value; }
         }
+
+        private static Random _Random; 
         #endregion
 
         #region Constructors
@@ -34,6 +36,7 @@ namespace Jeu2Des
         public De()
         {
             this.Valeur = 0;
+            _Random = new Random();
         }
         #endregion
 
@@ -44,10 +47,9 @@ namespace Jeu2Des
         /// </summary>
         public void Lancer()
         {
-            Random monRandom = new Random();
-
-            this.Valeur = monRandom.Next(1, 7);
+            this.Valeur = _Random.Next(1, 7);
         }
+        
         #endregion
     }
 }
